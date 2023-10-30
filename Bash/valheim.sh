@@ -63,6 +63,7 @@ services:
       - AUTO_BACKUP_DAYS_TO_LIVE=3
       - AUTO_BACKUP_ON_UPDATE=1
       - AUTO_BACKUP_ON_SHUTDOWN=1
+      - ENABLE_CROSSPLAY=1
     volumes:
       - ./valheim/saves:/home/steam/.config/unity3d/IronGate/Valheim
       - ./valheim/server:/home/steam/valheim
