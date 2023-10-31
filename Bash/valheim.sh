@@ -6,18 +6,6 @@ sudo apt install unzip apt-transport-https ca-certificates curl gnupg lsb-releas
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg -y
 sudo apt update
 
-# crossplay
-sudo add-apt-repository multiverse
-sudo dpkg --add-architecture i386
-sudo apt update
-sudo apt install lib32gcc-s1 steamcmd
-
-sudo apt-get install -y libatomic1
-sudo apt-get install -y libpulse-dev
-sudo apt-get install -y libpulse0
-
-steamcmd +@sSteamCmdForcePlatformType linux +force_install_dir /root/vh-server +login anonymous +app_update 896660 -beta none validate +quit
-
 #install AWS CLI
 sudo curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 sudo unzip awscliv2.zip
